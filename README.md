@@ -20,6 +20,8 @@ Each training and test example is assigned to one of the following labels:
 8 Bag
 9 Ankle boot 
 
+
+
 # PYTORCH IMPLEMENTATION
 ## Model
 The Model consist of convolutional Layers with relu activation functions and Fully Connected layers.
@@ -54,3 +56,26 @@ criterion = nn.CrossEntropyLoss()
 
 ## Accuracy
 The max Achieved Accuracy is found to be 92% and the average accuracy is found to be 87.5% after 25 epochs on a GPU with GTX 1050 Configuration with a batch size of 75.
+
+
+
+# KERAS IMPLEMENTATION
+## Model
+This is not a convolutional network. This is a simply connected Dense layered network. The Following are the layers of the model:-
+```
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense_17 (Dense)             (None, 512)               401920    
+_________________________________________________________________
+dense_18 (Dense)             (None, 256)               131328    
+_________________________________________________________________
+dense_19 (Dense)             (None, 10)                2570      
+=================================================================
+Total params: 535,818
+Trainable params: 535,818
+Non-trainable params: 0
+```
+
+## Loss And Accuracy Metrics
+Loss used is categorical cross entropy loss and the model uses a RMSProp.

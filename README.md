@@ -20,6 +20,7 @@ Each training and test example is assigned to one of the following labels:
 8 Bag
 9 Ankle boot 
 
+# PYTORCH IMPLEMENTATION
 ## Model
 The Model consist of convolutional Layers with relu activation functions and Fully Connected layers.
 Following is structure of the Convoltional Model Used 
